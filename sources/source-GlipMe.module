@@ -4,6 +4,7 @@
  *
  * Version History
  *     2014-10-13  Initial version with api 1.0 by Trapulo
+ *     2015-08-10  Updated to GlipMe api 2.0
  *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
 
 class GlipMe extends superfecta_base {
@@ -20,7 +21,7 @@ class GlipMe extends superfecta_base {
 
 	function get_caller_id($thenumber, $run_param=array()) {
 
-		$url = 'https://service.glipme.com/api/1.0/pbx/[KEY]/asterisklookup/[NUMBER]';
+		$url = 'https://service.glipme.com/api/2.0/pbx/[KEY]/asterisklookup/[NUMBER]';
 		$url = str_replace('[KEY]', $run_param['Security_key'], $url);
 		$url = str_replace('[NUMBER]', $thenumber, $url);
 		//            $url = urlencode($url);
